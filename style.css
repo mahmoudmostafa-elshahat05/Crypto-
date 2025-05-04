@@ -1,0 +1,122 @@
+/* تغيير لون خلفية الصفحة */
+body {
+    font-family: 'Tahoma', sans-serif;
+    direction: rtl;
+    background-color: #f7f7f7;  /* خلفية فاتحة جداً */
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* تصميم جديد للـ Sidebar */
+  .sidebar {
+    background-color: #333333; /* لون داكن للـ Sidebar */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* تعديل تصميم الروابط داخل الـ Sidebar */
+  .sidebar a {
+    padding: 18px 25px;
+    text-decoration: none;
+    color: #ffffff; /* نص أبيض */
+    text-align: center;
+    font-size: 18px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .sidebar a:hover {
+    background-color: #ff7043; /* لون برتقالي عند المرور بالماوس */
+    color: #ffffff;
+  }
+  
+  /* تنسيق المحتوى بشكل جميل */
+  .content {
+    padding: 20px;
+    margin-top: 80px;
+  }
+  
+  /* تنسيق الفورم وحقول الإدخال */
+  .login-container, .contact-container {
+    max-width: 450px;
+    margin: 100px auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  input {
+    width: 100%;
+    padding: 12px;
+    margin: 12px 0;
+    border-radius: 8px;
+    border: 1px solid #cccccc;
+  }
+  
+  button {
+    padding: 12px 25px;
+    background-color: #00796b;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #004d40;
+  }
+  
+  /* تنسيق المعرض (Gallery) */
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 30px;
+  }
+  
+  .place {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    transition: transform 0.3s ease;
+  }
+  
+  .place:hover {
+    transform: scale(1.05);
+  }
+  
+  .place img {
+    width: 100%;
+    border-radius: 8px;
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  .place p {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 16px;
+  }
+  
+  /* العنوان (Title) */
+  .title {
+    margin-top: 30px;
+    font-size: 26px;
+    color: #00796b;
+    text-align: center;
+    font-weight: bold;
+  }
